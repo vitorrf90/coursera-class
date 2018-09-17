@@ -1,10 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hello Coursera</title>
+<!DOCTYPE html> 
+<html> 
+<head>     
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />     
+<title>Rumo a Front-end</title>
+<link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<h1>Ja fiz uma página nas internet =D
-<p>Agora só falta aprender o resto ahaueh</p></h1>
+<h1>Progresso de estudo</h1>
+<h2>HTML</h2>
+<section>
+	<ol id="list1">
+		<li onclick="spoiler()"><div><strike>Week 1 - Introduction to HTML5</strike></div></li>
+		<div id="detalhes">teste</div>
+		<li><div><strike>Week 2 - Introduction do CSS3</strike></div></li>
+		<li><div>Week 3 - Coding the Static Restaurant Site</div></li>
+		<li><div>Week 4 - Introduction do Javascript</div></li>
+		<li><div>Week 5 - Using Javascript to build Web Apllications</div></li>
+	</ol>
+</section>
+<h2>React</h2>
+<section>
+	<ol id="list1" start="6">
+		<li><div>Week 1 - Introduction to React</div></li>
+		<li><div>Week 2 - React Router and Single Page Applications</div></li>
+		<li><div>Week 3 - React Forms, Flow Architechture and Introduction to Redux</div></li>
+		<li><div>Week 4 - More Redux and Client-Server Communication</div></li>
+	</ol>
+</section>
+<section>
+	<div>
+		<p id="box1">BOX</p>
+		<p>BOX</p>
+		<p>BOX</p>
+		<p>BOX</p>
+		<p>BOX</p>
+		<p>BOX</p>
+	</div>
+</section>
+<script type="text/javascript">
+	function spoiler() {
+		var x = document.getElementById("detalhes");
+    	if (x.style.display === "none") {
+     	   x.style.display = "block";
+	    } else {
+ 	       x.style.display = "none";
+ 		}
+    }
+</script>
 </body>
+
 </html>
